@@ -1,0 +1,3108 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980?rev=1.1' id='Book1_17353931756980' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='8'>
+        <calculation class='tableau' formula='8' />
+        <range max='15' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='Electric_Vehicle_Population_Data' inline='true' name='federated.03y4aqj0kwire017jtz1d1peazz7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric_Vehicle_Population_Data' name='textscan.1vao1bd0kowt1116dbdcs0zfw2lb'>
+            <connection class='textscan' directory='C:/Users/Tulsi/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1vao1bd0kowt1116dbdcs0zfw2lb' name='Electric_Vehicle_Population_Data.csv' table='[Electric_Vehicle_Population_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='VIN (1-10)' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='integer' name='Postal Code' ordinal='4' />
+            <column datatype='integer' name='Model Year' ordinal='5' />
+            <column datatype='string' name='Make' ordinal='6' />
+            <column datatype='string' name='Model' ordinal='7' />
+            <column datatype='string' name='Electric Vehicle Type' ordinal='8' />
+            <column datatype='string' name='Clean Alternative Fuel Vehicle (CAFV) Eligibility' ordinal='9' />
+            <column datatype='integer' name='Electric Range' ordinal='10' />
+            <column datatype='integer' name='Base MSRP' ordinal='11' />
+            <column datatype='integer' name='Legislative District' ordinal='12' />
+            <column datatype='integer' name='DOL Vehicle ID' ordinal='13' />
+            <column datatype='string' name='Vehicle Location' ordinal='14' />
+            <column datatype='string' name='Electric Utility' ordinal='15' />
+            <column datatype='integer' name='2020 Census Tract' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIN (1-10)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIN (1-10)]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>VIN (1-10)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Model Year]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Model Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Vehicle Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Vehicle Type]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Electric Vehicle Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clean Alternative Fuel Vehicle (CAFV) Eligibility]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electric Range]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Electric Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base MSRP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base MSRP]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Base MSRP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legislative District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legislative District]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Legislative District</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOL Vehicle ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOL Vehicle ID]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>DOL Vehicle ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle Location]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Vehicle Location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Utility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Utility]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>Electric Utility</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 Census Tract</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 Census Tract]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Data.csv]</parent-name>
+            <remote-alias>2020 Census Tract</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]&quot;' value='% of Total ' />
+        </aliases>
+      </column>
+      <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+      </column>
+      <column caption='Avg Electric Range' datatype='real' name='[Calculation_555068685193064449]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Electric Range])' />
+      </column>
+      <column caption='Total BEV Vehicles' datatype='integer' name='[Calculation_555068685197328387]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;IF [Electric Vehicle Type] = &quot;Battery Electric Vehicle (BEV)&quot; &#13;&#10;THEN [DOL Vehicle ID]&#13;&#10;END&#13;&#10;)' />
+      </column>
+      <column caption='% of BEV Vehicles' datatype='real' name='[Calculation_555068685200183300]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_555068685197328387] / [Calculation_555068685191303168]' />
+      </column>
+      <column caption='Total PHEV Vehicles' datatype='integer' name='[Calculation_555068685201010693]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;IF  [Electric Vehicle Type] = &apos;Plug-in Hybrid Electric Vehicle (PHEV)&apos;&#13;&#10;THEN [DOL Vehicle ID]&#13;&#10;END&#13;&#10;)' />
+      </column>
+      <column caption='% PHEV Vehciles' datatype='real' name='[Calculation_555068685201596422]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_555068685201010693] / [Calculation_555068685191303168]' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+          <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+          <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+          <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Model Year]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Vin (1-10)' datatype='string' name='[VIN (1-10)]' role='dimension' type='nominal' />
+      <column caption='Electric_Vehicle_Population_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]' role='measure' type='quantitative' />
+      <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Model Year]' derivation='None' name='[none:Model Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[pcto:usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <group caption='Action (Model Year)' hidden='true' name='[Action (Model Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Model Year:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tulsi/Downloads/EV Vehicles analysis.twb Files/Data/TableauTemp/#TableauTemp_0vd3h2m1wg54rv161tcd50mg7wup.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/31/2024 06:15:59 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>VIN (1-10)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[VIN (1-10)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VIN (1-10)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>704</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>972</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Model Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model Year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Make</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Electric Vehicle Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Electric Vehicle Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Electric Vehicle Type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Clean Alternative Fuel Vehicle (CAFV) Eligibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Electric Range</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Electric Range]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Electric Range</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Base MSRP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Base MSRP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Base MSRP</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Legislative District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Legislative District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Legislative District</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOL Vehicle ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DOL Vehicle ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOL Vehicle ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>150482</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Location</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>972</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Electric Utility</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Electric Utility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Electric Utility</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2020 Census Tract</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2020 Census Tract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2020 Census Tract</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Electric_Vehicle_Population_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Make:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;VOLVO&quot;</bucket>
+            </map>
+            <map to='#27773d'>
+              <bucket>&quot;VOLKSWAGEN&quot;</bucket>
+            </map>
+            <map to='#328445'>
+              <bucket>&quot;TOYOTA&quot;</bucket>
+            </map>
+            <map to='#3d8c4b'>
+              <bucket>&quot;RIVIAN&quot;</bucket>
+            </map>
+            <map to='#44924e'>
+              <bucket>&quot;TESLA&quot;</bucket>
+            </map>
+            <map to='#529d51'>
+              <bucket>&quot;MERCEDES-BENZ&quot;</bucket>
+            </map>
+            <map to='#559f52'>
+              <bucket>&quot;NISSAN&quot;</bucket>
+            </map>
+            <map to='#64ac5a'>
+              <bucket>&quot;KIA&quot;</bucket>
+            </map>
+            <map to='#70b764'>
+              <bucket>&quot;HYUNDAI&quot;</bucket>
+            </map>
+            <map to='#73ba67'>
+              <bucket>&quot;JEEP&quot;</bucket>
+            </map>
+            <map to='#83c976'>
+              <bucket>&quot;FORD&quot;</bucket>
+            </map>
+            <map to='#84ca77'>
+              <bucket>&quot;CHRYSLER&quot;</bucket>
+            </map>
+            <map to='#97d586'>
+              <bucket>&quot;CHEVROLET&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;AUDI&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;BMW&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' palette='green_10_0' type='palette'>
+            <map to='#256f3d'>
+              <bucket>&quot;Clean Alternative Fuel Vehicle Eligible&quot;</bucket>
+            </map>
+            <map to='#67af5c'>
+              <bucket>&quot;Eligibility unknown as battery range has not been researched&quot;</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>&quot;Not eligible due to low battery range&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <filter class='quantitative' column='[Model Year]' filter-group='2' included-values='in-range'>
+        <min>2011</min>
+      </filter>
+      <filter class='categorical' column='[State]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[State]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[State]' member='&quot;AK&quot;' />
+            <groupfilter function='member' level='[State]' member='&quot;HI&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='Electric_Vehicle_Population_Data.csv' id='Electric_Vehicle_Population_Data.csv_EA4D6DCEDBFE4F19A031958992D2BD79'>
+            <properties context=''>
+              <relation connection='textscan.1vao1bd0kowt1116dbdcs0zfw2lb' name='Electric_Vehicle_Population_Data.csv' table='[Electric_Vehicle_Population_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='VIN (1-10)' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                  <column datatype='integer' name='Postal Code' ordinal='4' />
+                  <column datatype='integer' name='Model Year' ordinal='5' />
+                  <column datatype='string' name='Make' ordinal='6' />
+                  <column datatype='string' name='Model' ordinal='7' />
+                  <column datatype='string' name='Electric Vehicle Type' ordinal='8' />
+                  <column datatype='string' name='Clean Alternative Fuel Vehicle (CAFV) Eligibility' ordinal='9' />
+                  <column datatype='integer' name='Electric Range' ordinal='10' />
+                  <column datatype='integer' name='Base MSRP' ordinal='11' />
+                  <column datatype='integer' name='Legislative District' ordinal='12' />
+                  <column datatype='integer' name='DOL Vehicle ID' ordinal='13' />
+                  <column datatype='string' name='Vehicle Location' ordinal='14' />
+                  <column datatype='string' name='Electric Utility' ordinal='15' />
+                  <column datatype='integer' name='2020 Census Tract' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.03y4aqj0kwire017jtz1d1peazz7'>
+      <datasources>
+        <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+      </datasources>
+      <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+        <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+            <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+            <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+          </aliases>
+        </column>
+        <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+            <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' context='true'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' member='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' />
+          <groupfilter function='member' level='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' member='&quot;Eligibility unknown as battery range has not been researched&quot;' />
+          <groupfilter function='member' level='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' member='&quot;Not eligible due to low battery range&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' context='true'>
+        <groupfilter function='level-members' level='[none:Electric Vehicle Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]' context='true'>
+        <groupfilter function='level-members' level='[none:Model:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]' context='true'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;AL&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;AP&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;AR&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;AZ&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;BC&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;CA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;CO&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;CT&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;DC&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;DE&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;FL&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;GA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;ID&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;IL&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;IN&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;KS&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;KY&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;LA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MD&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MN&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MO&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MS&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;MT&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NC&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NE&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NH&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NJ&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NV&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;NY&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;OH&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;OR&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;PA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;SC&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;TX&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;UT&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;VA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;WA&quot;' />
+          <groupfilter function='member' level='[none:State:nk]' member='&quot;WY&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Avg Electric Range'>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/AvgElectricRange?rev=' id='110438900' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Avg Electric Range' datatype='real' name='[Calculation_555068685193064449]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Electric Range])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Electric Range]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685193064449]' derivation='User' name='[usr:Calculation_555068685193064449:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685193064449:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>Avg Electric Range</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontname='Tableau Bold' fontsize='22'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685193064449:qk]> Miles]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9211CECA-72BD-42CF-985D-CB2D9DEC12EF}' />
+    </worksheet>
+    <worksheet name='Top Vehicles by Make'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='11'>Top &lt;</run>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='11'>[Parameters].[Parameter 1]</run>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='11'>&gt; Vehicles by Make</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TopVehiclesbyMake?rev=' id='110438905' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='8'>
+              <calculation class='tableau' formula='8' />
+              <range max='15' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[pcto:usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_555068685191303168]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Make:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]>]]></run>
+                <run fontname='Tableau Medium'><![CDATA[ ; <[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]</rows>
+        <cols>[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]</cols>
+      </table>
+      <simple-id uuid='{C84BEB66-611B-4BEE-A2B2-1D0D4EA2ED8A}' />
+    </worksheet>
+    <worksheet name='Total BEV Vehicles'>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalBEVVehicles?rev=' id='110438901' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column caption='Total BEV Vehicles' datatype='integer' name='[Calculation_555068685197328387]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;IF [Electric Vehicle Type] = &quot;Battery Electric Vehicle (BEV)&quot; &#13;&#10;THEN [DOL Vehicle ID]&#13;&#10;END&#13;&#10;)' />
+            </column>
+            <column caption='% of BEV Vehicles' datatype='real' name='[Calculation_555068685200183300]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_555068685197328387] / [Calculation_555068685191303168]' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685197328387]' derivation='User' name='[usr:Calculation_555068685197328387:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_555068685200183300]' derivation='User' name='[usr:Calculation_555068685200183300:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685200183300:qk]' value='p0.00%' />
+            <format attr='height' value='108' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685197328387:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685200183300:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>Total BEV Vehicles</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='22'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685197328387:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#00aaaa' fontname='Tableau Bold' fontsize='14'><![CDATA[% of Total :<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685200183300:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3F226E63-CE64-41FF-AD62-4AA929885C23}' />
+    </worksheet>
+    <worksheet name='Total PHEV Vehicles'>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalPHEVVehicles?rev=' id='110438902' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column caption='Total PHEV Vehicles' datatype='integer' name='[Calculation_555068685201010693]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;IF  [Electric Vehicle Type] = &apos;Plug-in Hybrid Electric Vehicle (PHEV)&apos;&#13;&#10;THEN [DOL Vehicle ID]&#13;&#10;END&#13;&#10;)' />
+            </column>
+            <column caption='% PHEV Vehciles' datatype='real' name='[Calculation_555068685201596422]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_555068685201010693] / [Calculation_555068685191303168]' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685201010693]' derivation='User' name='[usr:Calculation_555068685201010693:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_555068685201596422]' derivation='User' name='[usr:Calculation_555068685201596422:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685201596422:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685201010693:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685201596422:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>Total PHEV Vehicles</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='22'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685201010693:qk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#00aaaa' fontname='Tableau Bold' fontsize='15'><![CDATA[% of Total : <[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685201596422:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{01EC40AE-40C6-4B6E-A99B-53BAC4CC6C2E}' />
+    </worksheet>
+    <worksheet name='Total Vehicles'>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalVehicles?rev=' id='110438899' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='179' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#e30000' fontname='Tableau Bold' fontsize='11'>Total Vehicles</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='22'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2AFA7935-79C8-4388-B75B-FD1E588E5E54}' />
+    </worksheet>
+    <worksheet name='Total Vehicles by CAFV Eligibility'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalVehiclesbyCAFVEligibility?rev=' id='110438906' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column caption='avg(0)' datatype='real' name='[Calculation_555068685240836105]' role='measure' type='quantitative' user:unnamed='Total Vehicles by CAFV Eligibility'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[pcto:usr:Calculation_555068685191303168:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_555068685240836105]' derivation='User' name='[usr:Calculation_555068685240836105:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' />
+              <wedge-size column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk:2]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Medium'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk:2]> ; <[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.8176796436309814' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.5712155103683472' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk] + [federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685240836105:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E4EA0061-2918-40E3-96F6-C03EB74ED0E0}' />
+    </worksheet>
+    <worksheet name='Total Vehicles by Model'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalVehiclesbyModel?rev=' id='110438907' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[pcto:usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03y4aqj0kwire017jtz1d1peazz7].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03y4aqj0kwire017jtz1d1peazz7].[pcto:usr:Calculation_555068685191303168:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Battery Electric Vehicle (BEV)&quot;</bucket>
+              <bucket>&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;MODEL Y&quot;</bucket>
+              <bucket>&quot;MODEL 3&quot;</bucket>
+              <bucket>&quot;LEAF&quot;</bucket>
+              <bucket>&quot;MODEL S&quot;</bucket>
+              <bucket>&quot;BOLT EV&quot;</bucket>
+              <bucket>&quot;MODEL X&quot;</bucket>
+              <bucket>&quot;VOLT&quot;</bucket>
+              <bucket>&quot;ID.4&quot;</bucket>
+              <bucket>&quot;NIRO&quot;</bucket>
+              <bucket>&quot;PACIFICA&quot;</bucket>
+              <bucket>&quot;WRANGLER&quot;</bucket>
+              <bucket>&quot;MUSTANG MACH-E&quot;</bucket>
+              <bucket>&quot;PRIUS PRIME&quot;</bucket>
+              <bucket>&quot;X5&quot;</bucket>
+              <bucket>&quot;I3&quot;</bucket>
+              <bucket>&quot;FUSION&quot;</bucket>
+              <bucket>&quot;EV6&quot;</bucket>
+              <bucket>&quot;IONIQ 5&quot;</bucket>
+              <bucket>&quot;C-MAX&quot;</bucket>
+              <bucket>&quot;RAV4 PRIME&quot;</bucket>
+              <bucket>&quot;R1T&quot;</bucket>
+              <bucket>&quot;XC90&quot;</bucket>
+              <bucket>&quot;BOLT EUV&quot;</bucket>
+              <bucket>&quot;E-GOLF&quot;</bucket>
+              <bucket>&quot;E-TRON&quot;</bucket>
+              <bucket>&quot;XC60&quot;</bucket>
+              <bucket>&quot;PRIUS PLUG-IN&quot;</bucket>
+              <bucket>&quot;XC40&quot;</bucket>
+              <bucket>&quot;R1S&quot;</bucket>
+              <bucket>&quot;500&quot;</bucket>
+              <bucket>&quot;CLARITY&quot;</bucket>
+              <bucket>&quot;OUTLANDER&quot;</bucket>
+              <bucket>&quot;F-150&quot;</bucket>
+              <bucket>&quot;PS2&quot;</bucket>
+              <bucket>&quot;I4&quot;</bucket>
+              <bucket>&quot;GRAND CHEROKEE&quot;</bucket>
+              <bucket>&quot;KONA ELECTRIC&quot;</bucket>
+              <bucket>&quot;Q5 E&quot;</bucket>
+              <bucket>&quot;HARDTOP&quot;</bucket>
+              <bucket>&quot;A3&quot;</bucket>
+              <bucket>&quot;SOLTERRA&quot;</bucket>
+              <bucket>&quot;TAYCAN&quot;</bucket>
+              <bucket>&quot;SORENTO&quot;</bucket>
+              <bucket>&quot;IX&quot;</bucket>
+              <bucket>&quot;330E&quot;</bucket>
+              <bucket>&quot;SOUL&quot;</bucket>
+              <bucket>&quot;530E&quot;</bucket>
+              <bucket>&quot;SPORTAGE&quot;</bucket>
+              <bucket>&quot;CAYENNE&quot;</bucket>
+              <bucket>&quot;C40&quot;</bucket>
+              <bucket>&quot;ESCAPE&quot;</bucket>
+              <bucket>&quot;EDV&quot;</bucket>
+              <bucket>&quot;ARIYA&quot;</bucket>
+              <bucket>&quot;Q4&quot;</bucket>
+              <bucket>&quot;X3&quot;</bucket>
+              <bucket>&quot;TRANSIT&quot;</bucket>
+              <bucket>&quot;SPARK&quot;</bucket>
+              <bucket>&quot;FOCUS&quot;</bucket>
+              <bucket>&quot;SOUL EV&quot;</bucket>
+              <bucket>&quot;I-PACE&quot;</bucket>
+              <bucket>&quot;IONIQ&quot;</bucket>
+              <bucket>&quot;COUNTRYMAN&quot;</bucket>
+              <bucket>&quot;KONA&quot;</bucket>
+              <bucket>&quot;GLC-CLASS&quot;</bucket>
+              <bucket>&quot;AIR&quot;</bucket>
+              <bucket>&quot;EQS-CLASS SUV&quot;</bucket>
+              <bucket>&quot;EQS-CLASS SEDAN&quot;</bucket>
+              <bucket>&quot;E-TRON SPORTBACK&quot;</bucket>
+              <bucket>&quot;EQB-CLASS&quot;</bucket>
+              <bucket>&quot;IONIQ 6&quot;</bucket>
+              <bucket>&quot;FORTWO ELECTRIC DRIVE&quot;</bucket>
+              <bucket>&quot;AVIATOR&quot;</bucket>
+              <bucket>&quot;Q5&quot;</bucket>
+              <bucket>&quot;CX-90&quot;</bucket>
+              <bucket>&quot;SANTA FE&quot;</bucket>
+              <bucket>&quot;BZ4X&quot;</bucket>
+              <bucket>&quot;TUCSON&quot;</bucket>
+              <bucket>&quot;PANAMERA&quot;</bucket>
+              <bucket>&quot;E-TRON GT&quot;</bucket>
+              <bucket>&quot;EQE-CLASS SUV&quot;</bucket>
+              <bucket>&quot;S60&quot;</bucket>
+              <bucket>&quot;OPTIMA&quot;</bucket>
+              <bucket>&quot;I8&quot;</bucket>
+              <bucket>&quot;B-CLASS&quot;</bucket>
+              <bucket>&quot;CORSAIR&quot;</bucket>
+              <bucket>&quot;NX&quot;</bucket>
+              <bucket>&quot;LYRIQ&quot;</bucket>
+              <bucket>&quot;Q8&quot;</bucket>
+              <bucket>&quot;GV60&quot;</bucket>
+              <bucket>&quot;SONATA&quot;</bucket>
+              <bucket>&quot;ELR&quot;</bucket>
+              <bucket>&quot;EQE-CLASS SEDAN&quot;</bucket>
+              <bucket>&quot;FORTWO&quot;</bucket>
+              <bucket>&quot;CROSSTREK&quot;</bucket>
+              <bucket>&quot;I-MIEV&quot;</bucket>
+              <bucket>&quot;RAV4&quot;</bucket>
+              <bucket>&quot;EQ FORTWO&quot;</bucket>
+              <bucket>&quot;RZ 450E&quot;</bucket>
+              <bucket>&quot;GLE-CLASS&quot;</bucket>
+              <bucket>&quot;PRIUS&quot;</bucket>
+              <bucket>&quot;740E&quot;</bucket>
+              <bucket>&quot;V60&quot;</bucket>
+              <bucket>&quot;S90&quot;</bucket>
+              <bucket>&quot;RS E-TRON GT&quot;</bucket>
+              <bucket>&quot;RANGE ROVER SPORT&quot;</bucket>
+              <bucket>&quot;RANGE ROVER&quot;</bucket>
+              <bucket>&quot;KARMA&quot;</bucket>
+              <bucket>&quot;G80&quot;</bucket>
+              <bucket>&quot;C-CLASS&quot;</bucket>
+              <bucket>&quot;CT6&quot;</bucket>
+              <bucket>&quot;TONALE&quot;</bucket>
+              <bucket>&quot;A7&quot;</bucket>
+              <bucket>&quot;S-CLASS&quot;</bucket>
+              <bucket>&quot;GV70&quot;</bucket>
+              <bucket>&quot;TRANSIT CONNECT ELECTRIC&quot;</bucket>
+              <bucket>&quot;ACCORD&quot;</bucket>
+              <bucket>&quot;ROADSTER&quot;</bucket>
+              <bucket>&quot;745E&quot;</bucket>
+              <bucket>&quot;CITY&quot;</bucket>
+              <bucket>&quot;A8 E&quot;</bucket>
+              <bucket>&quot;745LE&quot;</bucket>
+              <bucket>&quot;FLYING SPUR&quot;</bucket>
+              <bucket>&quot;BENTAYGA&quot;</bucket>
+              <bucket>&quot;918&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]' direction='ASC' measure-to-sort-by='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' value='68' />
+            <format attr='width' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk]' value='92' />
+            <format attr='width' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]' value='100' />
+            <format attr='background-color' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[:Measure Names]' value='#a0d1ff' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#a0d1ff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk] / ([federated.03y4aqj0kwire017jtz1d1peazz7].[none:Make:nk] / [federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]))</rows>
+        <cols>[federated.03y4aqj0kwire017jtz1d1peazz7].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{76E85D2F-9C17-4BE2-BBD4-68D6E905141C}' />
+    </worksheet>
+    <worksheet name='Total Vehicles by Model Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalVehiclesbyModelYear?rev=' id='110438903' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Model Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model Year]' derivation='None' name='[none:Model Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='stroke-color' id='refline1' value='#72b9664b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <reference-line axis-column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' enable-instant-analytics='true' formula='average' id='refline1' label='Avg : &lt;Value&gt;' label-type='custom' probability='95' scope='per-table' value-column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-transparency' value='160' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='mark-transparency' value='160' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Semibold'>&lt;</run>
+                <run fontname='Tableau Semibold'>[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]</run>
+                <run fontname='Tableau Semibold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-transparency' value='160' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk] + [federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk])</rows>
+        <cols>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]</cols>
+      </table>
+      <simple-id uuid='{321FB0A3-4752-4A48-951D-EB7CADE354F8}' />
+    </worksheet>
+    <worksheet name='Total Vehicles by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#e30000' fontname='Tableau Bold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/TotalVehiclesbyState?rev=' id='110438904' path='/workbooks/Book1_17353931756980' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+            <column caption='Total Vehicles' datatype='integer' name='[Calculation_555068685191303168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([DOL Vehicle ID])' />
+            </column>
+            <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+                <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+                <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+                <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_555068685191303168]' derivation='User' name='[usr:Calculation_555068685191303168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]</column>
+            <column>[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[Longitude (generated)]' field-type='quantitative' max='-5931216.4719132408' min='-13452903.344732726' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[Latitude (generated)]' field-type='quantitative' max='5885914.4049103558' min='2961429.4581773118' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#00ff7734' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+              <text column='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' />
+              <lod column='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]' />
+              <geometry column='[federated.03y4aqj0kwire017jtz1d1peazz7].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>State:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Vehicles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Semibold'>&lt;</run>
+                <run fontname='Tableau Semibold'>[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]</run>
+                <run fontname='Tableau Semibold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03y4aqj0kwire017jtz1d1peazz7].[Latitude (generated)]</rows>
+        <cols>[federated.03y4aqj0kwire017jtz1d1peazz7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C26E0C78-1C9E-40B5-874B-0CA0CCDDA95A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Data Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='22'>ELECTRIC VEHICLE DATA ANALYSIS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/Book1_17353931756980/DataAnalysis?rev=' id='110438908' path='/workbooks/Book1_17353931756980' revision='' />
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Electric_Vehicle_Population_Data' name='federated.03y4aqj0kwire017jtz1d1peazz7' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Top N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='8'>
+          <calculation class='tableau' formula='8' />
+          <range max='15' min='1' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.03y4aqj0kwire017jtz1d1peazz7'>
+        <column datatype='string' name='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Clean Alternative Fuel Vehicle Eligible&quot;' value='CAFV Eligible' />
+            <alias key='&quot;Eligibility unknown as battery range has not been researched&quot;' value='CAFV Unknown' />
+            <alias key='&quot;Not eligible due to low battery range&quot;' value='CAFV Not Eligible' />
+          </aliases>
+        </column>
+        <column caption='EV Type' datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Battery Electric Vehicle (BEV)&quot;' value=' BEV' />
+            <alias key='&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;' value='PHEV' />
+          </aliases>
+        </column>
+        <column datatype='integer' name='[Model Year]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Clean Alternative Fuel Vehicle (CAFV) Eligibility]' derivation='None' name='[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Model Year]' derivation='None' name='[none:Model Year:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='5' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='6445' id='7' type-v2='title' w='99000' x='500' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='14333' id='9' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='85875' x='13688' y='9000'>
+          <zone h='14333' id='11' name='Avg Electric Range' show-title='false' w='21500' x='13688' y='9000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone h='14333' id='10' name='Total Vehicles' show-title='false' w='21500' x='35188' y='9000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone h='14333' id='12' name='Total BEV Vehicles' show-title='false' w='21437' x='56688' y='9000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone h='14333' id='13' name='Total PHEV Vehicles' show-title='false' w='21438' x='78125' y='9000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='90444' id='14' param='vert' type-v2='layout-flow' w='13438' x='188' y='8778'>
+          <zone h='14554' id='31' is-scaled='1' param='C:/Users/Tulsi/Downloads/EV Vehicles analysis.twb Files/Image/EV.jpg' type-v2='bitmap' w='13188' x='313' y='8889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='65' h='8111' id='18' is-fixed='true' name='Total Vehicles by State' pane-specification-id='0' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' type-v2='color' w='13188' x='313' y='23443'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='134' h='15778' id='27' is-fixed='true' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' type-v2='filter' values='database' w='13188' x='313' y='31554'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='149' h='17445' id='28' is-fixed='true' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' type-v2='filter' values='database' w='13188' x='313' y='47332'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='141' h='16556' id='29' is-fixed='true' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]' type-v2='filter' values='database' w='13188' x='313' y='64777'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='151' h='17667' id='30' is-fixed='true' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]' type-v2='filter' values='database' w='13188' x='313' y='81333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+            <format attr='margin-top' value='1' />
+            <format attr='margin-right' value='2' />
+            <format attr='margin-bottom' value='2' />
+            <format attr='margin-left' value='2' />
+            <format attr='background-color' value='#00ff7734' />
+          </zone-style>
+        </zone>
+        <zone h='35000' id='15' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='86063' x='13625' y='23444'>
+          <zone h='35000' id='16' name='Total Vehicles by Model Year' w='43063' x='13625' y='23444'>
+            <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='3' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone h='35000' id='17' name='Total Vehicles by State' w='43000' x='56688' y='23444'>
+            <layout-cache minwidth='202' type-h='fixed' type-w='scalable' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='41222' id='19' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='85813' x='13813' y='58556'>
+          <zone h='41000' id='20' name='Top Vehicles by Make' w='28563' x='13875' y='58667'>
+            <layout-cache minwidth='220' type-h='fixed' type-w='scalable' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='5' />
+            </zone-style>
+          </zone>
+          <zone h='41000' id='24' name='Total Vehicles by CAFV Eligibility' w='28562' x='42438' y='58667'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='41000' id='26' name='Total Vehicles by Model' w='28563' x='71000' y='58667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='0' />
+            <format attr='margin-top' value='1' />
+            <format attr='margin-right' value='1' />
+            <format attr='margin-bottom' value='1' />
+            <format attr='margin-left' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='4333' id='23' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='7375' x='35375' y='58889'>
+          <formatted-text>
+            <run>Top N</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontname='Tableau Bold' fontsize='22'>ELECTRIC VEHICLE DATA ANALYSIS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2550' minheight='2550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='36' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone h='6445' id='7' type-v2='title' w='99000' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='14554' id='31' is-fixed='true' is-scaled='1' param='C:/Users/Tulsi/Downloads/EV Vehicles analysis.twb Files/Image/EV.jpg' type-v2='bitmap' w='13188' x='313' y='8889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='14333' id='11' is-fixed='true' name='Avg Electric Range' show-title='false' w='21500' x='13688' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='14333' id='10' is-fixed='true' name='Total Vehicles' show-title='false' w='21500' x='35188' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='14333' id='12' is-fixed='true' name='Total BEV Vehicles' show-title='false' w='21437' x='56688' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='14333' id='13' is-fixed='true' name='Total PHEV Vehicles' show-title='false' w='21438' x='78125' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='134' h='15778' id='27' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' type-v2='filter' values='database' w='13188' x='313' y='31554'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='17445' id='28' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' type-v2='filter' values='database' w='13188' x='313' y='47332'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='16556' id='29' mode='checkdropdown' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model:nk]' type-v2='filter' values='database' w='13188' x='313' y='64777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='151' h='17667' id='30' name='Total Vehicles by Model Year' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Model Year:qk]' type-v2='filter' values='database' w='13188' x='313' y='81333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35000' id='16' is-fixed='true' name='Total Vehicles by Model Year' w='43063' x='13625' y='23444'>
+                  <layout-cache minwidth='100' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35000' id='17' is-fixed='true' name='Total Vehicles by State' w='43000' x='56688' y='23444'>
+                  <layout-cache minwidth='202' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='8111' id='18' name='Total Vehicles by State' pane-specification-id='0' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' type-v2='color' w='13188' x='313' y='23443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41000' id='20' is-fixed='true' name='Top Vehicles by Make' w='28563' x='13875' y='58667'>
+                  <layout-cache minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41000' id='24' is-fixed='true' name='Total Vehicles by CAFV Eligibility' w='28562' x='42438' y='58667'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41000' id='26' is-fixed='true' name='Total Vehicles by Model' w='28563' x='71000' y='58667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4333' id='23' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='7375' x='35375' y='58889'>
+                  <formatted-text>
+                    <run>Top N</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{96ACFB05-46D4-4C97-8AE5-B04A1ECA2078}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Vehicles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7D46F38-C717-49FA-A3CF-06D43D9D87AB}' />
+    </window>
+    <window class='worksheet' name='Avg Electric Range'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9AC994F-0CAF-433C-A73A-B09191AC9C87}' />
+    </window>
+    <window class='worksheet' name='Total BEV Vehicles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03D608E4-55F8-4B48-B23F-03998C35A323}' />
+    </window>
+    <window class='worksheet' name='Total PHEV Vehicles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF5E91C1-4F8B-4A17-B12A-8C028BA76CB7}' />
+    </window>
+    <window class='worksheet' name='Total Vehicles by Model Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6F22E4CE-5A24-4C23-8375-473EB4F99D09}' />
+    </window>
+    <window class='worksheet' name='Total Vehicles by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B3EED0E-62BE-4ABD-B8C3-5708E4FDCBF9}' />
+    </window>
+    <window class='worksheet' name='Top Vehicles by Make'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Electric Vehicle Type:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:State:nk]' type='filter' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AD02F9E9-8D61-4CF5-8E09-F591BA499A9C}' />
+    </window>
+    <window class='worksheet' name='Total Vehicles by CAFV Eligibility'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[none:Clean Alternative Fuel Vehicle (CAFV) Eligibility:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D7BA1FEA-6BB6-400E-A1CD-4EA2A4B8EB63}' />
+    </window>
+    <window class='worksheet' name='Total Vehicles by Model'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03y4aqj0kwire017jtz1d1peazz7].[usr:Calculation_555068685191303168:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{248AF00E-8721-4E0E-960B-DD7C7D2A8B79}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Data Analysis'>
+      <viewpoints>
+        <viewpoint name='Avg Electric Range'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Top Vehicles by Make'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total BEV Vehicles'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total PHEV Vehicles'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Vehicles'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Vehicles by CAFV Eligibility'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Vehicles by Model'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Vehicles by Model Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Vehicles by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{85E96664-9B6C-4092-910A-836BBC9232E6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Data Analysis' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='79' name='Total Vehicles' width='183'>
+      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
+      JN/A3hiCB9QAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
